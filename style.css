@@ -1,0 +1,62 @@
+:root {
+  --body-bg: #123;
+  --nav-bg: #234;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: system-ui;
+}
+body {
+  margin: 0;
+  font-size: 1.25rem;
+  background: var(--body-bg);
+  padding: 0 5rem 0 20rem;
+  color: white;
+  
+}
+
+nav {
+  background: var(--nav-bg);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding-block: 2rem;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  gap: 1rem;
+}
+
+.nav-list a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-list li {
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  margin-inline: 1rem 0;
+  /* prevent animation glitch on right side */
+  box-shadow: 2px 0 0 var(--body-bg);
+}
+
+.nav-list li.active {
+  view-transition-name: nav;
+  display: block;
+  background: var(--body-bg);
+  position: relative;
+  z-index: ;
+  border-radius: 100vw 0 0 100vw;
+}
+
