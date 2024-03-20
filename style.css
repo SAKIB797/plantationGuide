@@ -133,6 +133,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: ;
     gap: 0;
   }
 
@@ -143,10 +144,9 @@ nav {
     position: relative;
     z-index: ;
     border-radius: 0 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   }
 
   .nav-list li {
@@ -155,10 +155,7 @@ nav {
     margin-inline: 0;
     /* prevent animation glitch on right side */
     box-shadow: 0 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    
   }
 
   .nav-list li a {
