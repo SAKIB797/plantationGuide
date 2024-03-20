@@ -6,16 +6,18 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   font-family: system-ui;
 }
+
 body {
   margin: 0;
   font-size: 1.25rem;
   background: var(--body-bg);
   padding: 0 5rem 0 20rem;
   color: white;
-  
+
 }
 
 nav {
@@ -60,30 +62,31 @@ nav {
 }
 
 @media only screen and (max-width: 600px) {
- 
-  body{
+
+  body {
     /* background-color: red; */
     padding: 10px;
 
   }
-  nav{
+
+  nav {
     top: 0;
     left: 0;
     right: 0;
     bottom: auto;
-padding-block: 0;
+    padding-block: 0;
   }
+
   .nav-list {
     margin: 0;
     padding: 0;
     list-style: none;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   gap: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    gap: 0;
   }
-  
+
   .nav-list li.active {
     /* view-transition-name: nav; */
     display: block;
@@ -91,19 +94,28 @@ padding-block: 0;
     position: relative;
     z-index: ;
     border-radius: 0 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    
   }
+
   .nav-list li {
     padding-block: 5px;
-    height: 100%;
-    padding-inline: 0;
     padding-inline: 10px;
-    margin-inline:  0;
+    margin-inline: 0;
     /* prevent animation glitch on right side */
     box-shadow: 0 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
- .nav-list li a{
-  font-size: 10px;
- } 
+
+  .nav-list li a {
+    font-size: 10px;
+    /* display: block; */
+    /* height: 100%; */
+    text-align: center;
+  }
 }
