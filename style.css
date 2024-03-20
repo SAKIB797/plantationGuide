@@ -31,7 +31,6 @@ nav {
   margin: 0;
   padding: 0;
   list-style: none;
-
   display: grid;
   gap: 1rem;
 }
@@ -60,3 +59,51 @@ nav {
   border-radius: 100vw 0 0 100vw;
 }
 
+@media only screen and (max-width: 600px) {
+ 
+  body{
+    /* background-color: red; */
+    padding: 10px;
+
+  }
+  nav{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+padding-block: 0;
+  }
+  .nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 0;
+  }
+  
+  .nav-list li.active {
+    /* view-transition-name: nav; */
+    display: block;
+    background: var(--body-bg);
+    position: relative;
+    z-index: ;
+    border-radius: 0 0 0 0;
+
+    
+  }
+  .nav-list li {
+    padding-block: 5px;
+    height: 100%;
+    padding-inline: 0;
+    padding-inline: 10px;
+    margin-inline:  0;
+    /* prevent animation glitch on right side */
+    box-shadow: 0 0 0 0;
+  }
+ .nav-list li a{
+  font-size: 10px;
+ } 
+}

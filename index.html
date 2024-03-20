@@ -11,24 +11,24 @@
   <link href="/style.css" rel="stylesheet" />
 </head>
 
-<body >
+<body>
   <nav>
     <ul class="nav-list">
-        <li class="active">
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="jan-mar.html">January - March</a>
-        </li>
-        <li>
-            <a href="apr-jun.html">April - June</a>
-        </li>
-        <li>
-            <a href="jul-sep.html">July - September</a>
-        </li>
-        <li>
-            <a href="oct-dec.html">October - December</a>
-        </li>
+      <li class="active">
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="page/jan-mar.html">January - March</a>
+      </li>
+      <li>
+        <a href="page/apr-jun.html">April - June</a>
+      </li>
+      <li>
+        <a href="page/jul-sep.html">July - September</a>
+      </li>
+      <li>
+        <a href="page/oct-dec.html">October - December</a>
+      </li>
     </ul>
   </nav>
 
@@ -38,7 +38,25 @@
       dolorem nam assumenda doloribus dolore, ad, facere molestiae fugiat. Unde eveniet vel, assumenda ex molestiae
       repudiandae!</p>
   </main>
- 
+  <div id="header"></div>
+  <script>
+    
+fetch('header/header.html')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.text();
+    })
+    .then(html => {
+        document.getElementById('header').innerHTML = html;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // Handle the error here, e.g., display an error message to the user
+    });
+
+  </script>
 </body>
 
 </html>
