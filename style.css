@@ -61,6 +61,38 @@ nav {
   border-radius: 100vw 0 0 100vw;
 }
 
+/*********/
+::view-transition-group(nav) {
+  animation-duration: 1s;
+}
+
+.nav-list li.active::before,
+.nav-list li.active::after {
+  --border-radius: 1rem;
+
+  content: "";
+  position: absolute;
+  width: var(--border-radius);
+  height: var(--border-radius);
+  right: 0rem;
+  background: var(--nav-bg);
+}
+
+.nav-list li.active::before {
+  border-radius: 0 0 var(--border-radius);
+  top: calc(var(--border-radius) * -1);
+  box-shadow: 5px 5px 0 5px var(--body-bg);
+}
+
+.nav-list li.active::after {
+  border-radius: 0 var(--border-radius) 0 0;
+  bottom: calc(var(--border-radius) * -1);
+  box-shadow: 5px -5px 0 5px var(--body-bg);
+}
+
+/*********/
+
+
 @media only screen and (max-width: 600px) {
 
   body {
@@ -117,5 +149,11 @@ nav {
     /* display: block; */
     /* height: 100%; */
     text-align: center;
+  }
+
+  /**hide pseudo element */
+  .nav-list li.active::before,
+  .nav-list li.active::after {
+    display: none; /* Hide the pseudo-elements */
   }
 }
