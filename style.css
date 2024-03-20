@@ -15,7 +15,7 @@ body {
   margin: 0;
   font-size: 1.25rem;
   background: var(--body-bg);
-  padding: 0 5rem 0 20rem;
+  padding: 8rem 5rem 0 20rem;
   color: white;
 
 }
@@ -26,7 +26,7 @@ nav {
   top: 0;
   bottom: 0;
   left: 0;
-  padding-block: 2rem;
+  padding-block: 8rem;
 }
 
 .nav-list {
@@ -46,14 +46,14 @@ nav {
 
 .nav-list li {
   padding-block: 1rem;
-  padding-inline: 2rem;
-  margin-inline: 1rem 0;
+  padding-inline: 3rem;
+  margin-inline: 2rem 0;
   /* prevent animation glitch on right side */
   box-shadow: 2px 0 0 var(--body-bg);
 }
 
 .nav-list li.active {
-  view-transition-name: nav;
+  /* view-transition-name: nav; */
   display: block;
   background: var(--body-bg);
   position: relative;
