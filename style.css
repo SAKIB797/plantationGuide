@@ -234,7 +234,7 @@ nav {
     .gallery>div:hover {
       background-color: green;
       cursor: pointer;
-      /* box-shadow: 0 0  15px green; */
+      box-shadow: 0 0  10px green;
     }
 
     /**smaller screenn*/
