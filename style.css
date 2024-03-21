@@ -115,8 +115,8 @@ nav {
 
   }
   .tabler--home-filled {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
   }
   nav {
     top: 36.4px;
@@ -155,7 +155,9 @@ nav {
     margin-inline: 0;
     /* prevent animation glitch on right side */
     box-shadow: 0 0 0 0;
-    
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
   }
 
   .nav-list li a {
