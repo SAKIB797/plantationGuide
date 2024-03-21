@@ -10,97 +10,7 @@
   <title>Demo title here</title>
   <link href="../style.css" rel="stylesheet" />
 
-  <style>
-    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
-    .gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 1rem;
-      width: 90%;
-      margin: auto;
-      text-align: center;
-      margin-block: 3rem;
-      justify-items: center;
-      align-items: center;
-
-    }
-
-    .gallery img {
-      width: 30%;
-      height: auto;
-    }
-
-    .gallery>div {
-      background-color: #234;
-      width: 100%;
-      height: 100%;
-      padding-block: 1.5rem;
-      padding-inline: .5rem;
-      border-radius: .5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-
-    }
-
-    .gallery>div button {
-      background: none;
-      outline: none;
-      border: none;
-      color: black;
-
-    }
-
-    .gallery>div h3 {
-      margin: 0;
-
-    }
-
-    .gallery>div>div:nth-child(2) {
-      padding-block: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .gallery>div:hover {
-      background-color: red;
-      cursor: pointer;
-    }
-
-    /**smaller screenn*/
-    @media screen and (max-width:600px) {
-      .gallery {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        width: 100%;
-        padding-block: ;
-      }
-
-      .gallery img {
-        width: 50%;
-      }
-
-      .gallery>div {
-        width: 100%;
-        height: 100%;
-        padding-block: 1rem;
-      }
-
-      .gallery>div h3 {
-        margin: 0;
-        font-size: 1rem;
-      }
-
-      .gallery>div>div:nth-child(2) {
-        height: 100%;
-        padding-block: 1rem;
-      }
-
-    }
-  </style>
+  
 </head>
 
 <body>
@@ -132,7 +42,6 @@
         </div>
         <div><img src="../img/img_1/carrot.png" alt=""></div>
       </div>
-
       <div onclick="document.location=''">
         <div>
           <h3>Cauliflower</h3>
