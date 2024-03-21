@@ -68,7 +68,6 @@ nav {
 
 .nav-list li.active {
   /* view-transition-name: nav; */
-  display: block;
   background: var(--body-bg);
   position: relative;
   z-index: ;
@@ -76,9 +75,9 @@ nav {
 }
 
 /*********/
-::view-transition-group(nav) {
+/* ::view-transition-group(nav) {
   animation-duration: 1s;
-}
+} */
 
 .nav-list li.active::before,
 .nav-list li.active::after {
@@ -114,12 +113,14 @@ nav {
     padding: 5rem 2rem 0rem 2rem;
 
   }
+
   .tabler--home-filled {
     width: 25px;
     height: 25px;
   }
+
   nav {
-    top: 36.4px;
+    top: 39.2px;
     left: 0;
     right: 0;
     bottom: auto;
@@ -132,21 +133,19 @@ nav {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: ;
-    gap: 0;
+    gap: 5px;
   }
 
   .nav-list li.active {
     /* view-transition-name: nav; */
     display: block;
     background: var(--body-bg);
-    position: relative;
-    z-index: ;
     border-radius: 0 0 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .nav-list li {
@@ -156,8 +155,8 @@ nav {
     /* prevent animation glitch on right side */
     box-shadow: 0 0 0 0;
     display: flex;
-  flex-direction: column;
-  justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .nav-list li a {
@@ -176,95 +175,95 @@ nav {
 }
 
 /**for grid*/
-    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-    .gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 2rem;
-      width: 90%;
-      margin: auto;
-      text-align: center;
-      margin-block: 3rem;
-      justify-items: center;
-      align-items: center;
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-block: 3rem;
+  justify-items: center;
+  align-items: center;
 
-    }
 
-    .gallery img {
-      width: 30%;
-      height: auto;
-    }
+}
 
-    .gallery>div {
-      background-color: #234;
-      width: 100%;
-      height: 100%;
-      padding-block: 1.5rem;
-      padding-inline: .5rem;
-      border-radius: .5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      /* box-shadow: 0 0  5px #234; */
-      border: ;
-    }
+.gallery img {
+  width: 30%;
+  height: auto;
+}
 
-    .gallery>div button {
-      background: none;
-      outline: none;
-      border: none;
-      color: black;
+.gallery>div {
+  background-color: #234;
+  width: 100%;
+  height: 100%;
+  padding-block: 1.5rem;
+  padding-inline: .5rem;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* box-shadow: 0 0  5px #234; */
+  border: ;
+}
 
-    }
+.gallery>div button {
+  background: none;
+  outline: none;
+  border: none;
+  color: black;
 
-    .gallery>div h3 {
-      margin: 0;
+}
 
-    }
+.gallery>div h3 {
+  margin: 0;
 
-    .gallery>div>div:nth-child(2) {
-      padding-block: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+}
 
-    .gallery>div:hover {
-      background-color: green;
-      cursor: pointer;
-      box-shadow: 0 0  10px green;
-    }
+.gallery>div>div:nth-child(2) {
+  padding-block: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-    /**smaller screenn*/
-    @media screen and (max-width:800px) {
-      .gallery {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        width: 100%;
-        padding-block: ;
-      }
+.gallery>div:hover {
+  background-color: green;
+  cursor: pointer;
+  box-shadow: 0 0 10px green;
+}
 
-      .gallery img {
-        width: 50%;
-      }
+/**smaller screenn*/
+@media screen and (max-width:800px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    padding-block: ;
+  }
 
-      .gallery>div {
-        width: 100%;
-        height: 100%;
-        padding-block: 1rem;
-      }
+  .gallery img {
+    width: 50%;
+  }
 
-      .gallery>div h3 {
-        margin: 0;
-        font-size: 1rem;
-      }
+  .gallery>div {
+    width: 100%;
+    height: 100%;
+    padding-block: 1rem;
+  }
 
-      .gallery>div>div:nth-child(2) {
-        height: 100%;
-        padding-block: 1rem;
-      }
+  .gallery>div h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
 
-    }
-  
+  .gallery>div>div:nth-child(2) {
+    height: 100%;
+    padding-block: 1rem;
+  }
+
+} 

@@ -1,28 +1,62 @@
 <style>
-    .parent{
+    .parent {
         padding-block: 10px;
         display: flex;
-        background-color: black;
+        background-color: #123;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         position: fixed;
-        right: 0;
-        left: 0;
-        top: 0;
+        right: 0px;
+        left: 0px;
+        top: 0px;
+        border: 2px solid #234;
+        border-radius: 3px;
+        text-align: center;
     }
 
-    .parent a{
+    .parent a {
         color: white;
         text-decoration: none;
-       
+
 
     }
+
+    .parent div {}
+
+    .title {
+
+        /* background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%); */
+        /* background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%); */
+        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+        padding-block: 5px;
+        font-size: 1.2rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      
+    }
+
+    /* .sub_title {
+        font-size: .8rem;
+    } */
 
     @media only screen and (max-width: 600px) {
 
-        .parent{
+        .parent {
             padding-block: 5px;
+            border: none;
+        }
+
+        .title {
+
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            padding-block: 5px;
+            font-size: 1rem;
         }
     }
 </style>
@@ -31,5 +65,7 @@
     <!-- <div><a href="">1</a></div>
     <div><a href="">2</a></div>
     <div><a href="">3</a></div> -->
-    <div>This site is under Construction</div>
+    <div>
+        <h3 class="title">Kisholoy "Gacher Bidyaloy"</h3>
+    </div>
 </div>
