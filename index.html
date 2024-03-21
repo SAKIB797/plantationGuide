@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Demo title here</title>
   <link href="style.css" rel="stylesheet" />
+
+ 
 </head>
 
 <body>
@@ -31,29 +33,30 @@
     </ul>
   </nav>
 
-  <main>
-    <h1>Home</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque consectetur veritatis doloremque ipsum odit
-      dolorem nam assumenda doloribus dolore, ad, facere molestiae fugiat. Unde eveniet vel, assumenda ex molestiae
-      repudiandae!</p>
+
+  <h1>Home</h1>
+  <p>"Give a man a fish, and you feed him for a day; teach a man to fish, and you feed him for a lifetime"</p>
+
+ 
   </main>
+
   <div id="header"></div>
   <script>
-    
-fetch('header/header.html')
-    .then(response => {
+
+    fetch('header/header.html')
+      .then(response => {
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+          throw new Error('Network response was not ok');
         }
         return response.text();
-    })
-    .then(html => {
+      })
+      .then(html => {
         document.getElementById('header').innerHTML = html;
-    })
-    .catch(error => {
+      })
+      .catch(error => {
         console.error('Error fetching header:', error);
         // Handle the error here, e.g., display an error message to the user
-    });
+      });
 
   </script>
 </body>

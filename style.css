@@ -29,7 +29,7 @@ body {
   margin: 0;
   font-size: 1.25rem;
   background: var(--body-bg);
-  padding: 6rem 5rem 0 20rem;
+  padding: 3rem 5rem 0 20rem;
   color: white;
 
 }
@@ -111,7 +111,7 @@ nav {
 
   body {
     /* background-color: red; */
-    padding: 3rem 1rem 0rem 2rem;
+    padding: 5rem 2rem 0rem 2rem;
 
   }
   .tabler--home-filled {
